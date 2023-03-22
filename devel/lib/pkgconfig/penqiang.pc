@@ -1,0 +1,8 @@
+prefix=/home/pc/catkin_ws/devel
+
+Name: penqiang
+Description: Description of penqiang
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

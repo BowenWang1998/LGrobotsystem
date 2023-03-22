@@ -1,0 +1,16 @@
+-I/opt/ros/melodic/include
+-I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
+-I/usr/include
+-I/usr/include/eigen3
+-I/usr/include/OGRE/Overlay
+-I/usr/include/OGRE
+-I/usr/include/opencv
+-I/home/pc/catkin_ws/src/qt_ros_project
+-I/home/pc/catkin_ws/build/qt_ros_project
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="qt_ros_project"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_main_window.cpp
+/home/pc/catkin_ws/src/qt_ros_project/include/qt_ros_project/main_window.hpp

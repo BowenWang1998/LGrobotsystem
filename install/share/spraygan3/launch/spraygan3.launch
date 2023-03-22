@@ -1,0 +1,19 @@
+<launch>
+    <arg name = "model"/>
+    <param name = "robot_description" textfile = "$(find spraygan3)/urdf/spraygan3.urdf"/>
+    <param name = "use_gui" value = "true"/>
+ 
+    <node name = "joint_state_publisher"
+          pkg = "joint_state_publisher"
+          type = "joint_state_publisher"/>
+ 
+    <node name = "robot_state_publisher"
+          pkg = "robot_state_publisher"
+          type = "robot_state_publisher"/>
+ 
+    <node name = "rviz"
+          pkg = "rviz"
+          type = "rviz"
+          args = "-d $(find spraygan3)/rviz/spraygan3.rviz"
+          required = "true"/>
+</launch>

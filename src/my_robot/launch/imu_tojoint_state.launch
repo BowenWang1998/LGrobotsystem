@@ -1,0 +1,3 @@
+<launch>
+	<node name="imu_to_joint_state" pkg="my_robot" type="imu_to_joint_state" output="screen"/> 
+</launch>

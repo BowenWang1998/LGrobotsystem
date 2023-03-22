@@ -1,0 +1,16 @@
+<launch>
+  <arg name="model" default="$(find ky_imu)/urdf/spraygan3.urdf"/>
+  <param name="robot_description" textfile="$(find ky_imu)/urdf/spraygan3.urdf"/>
+    <node name="ky_imu" pkg="ky_imu" type="ky_imu" output="screen" respawn="true">
+
+    <param name="imu_port" type="string" value="/dev/ttyUSB0"/> <!--/dev/imu 设备号-->
+    <param name="imu_rate" type="int" value="100"/>  <!--imu数据频率-->
+    <param name="imu_port_baud" type="int" value="115200"/> <!--波特率-->
+    <param name="imu_frame_id" type="string" value="imu_base_link"/> <!--imu坐标系-->
+    <rosparam param="imu_transform">[0, 0, 0, 0, 0, 0]</rosparam><!-- x y z r p y 静态tf变换-->
+    </node>
+
+    <!-- 加载 rviz -->
+  <!-- ##<node name="rviz" pkg="rviz" type="rviz" args="-d $(find ky_imu)/rviz/show.rviz"/>##  -->
+   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ky_imu)/rviz/show.rviz"/>#
+</launch>

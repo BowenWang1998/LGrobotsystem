@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="spraygan3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.048613608435407 -0.00638094242116576 -0.0147323014509533"
+        rpy="0 0 0" />
+      <mass
+        value="0.0955147834568144" />
+      <inertia
+        ixx="1.14012291358763E-05"
+        ixy="1.01042581227284E-10"
+        ixz="1.10725084455561E-07"
+        iyy="1.19692416716406E-05"
+        iyz="2.27531497509632E-09"
+        izz="8.28970457437801E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://spraygan3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0313725490196078 0.0313725490196078 0.0313725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spraygan3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="0.317620632943105 -0.000145769118763461 -0.00106326692282507"
+        rpy="0 0 0" />
+      <mass
+        value="0.445711010231022" />
+      <inertia
+        ixx="0.000196933461317675"
+        ixy="3.35512847719352E-06"
+        ixz="-1.05016759515173E-07"
+        iyy="0.0011436656428389"
+        iyz="-1.38876777167375E-09"
+        izz="0.00114366942951764" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spraygan3/meshes/Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spraygan3/meshes/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="0.0638884822288708 3.36552253246575E-16 0.0501923738022853"
+        rpy="0 0 0" />
+      <mass
+        value="0.0717286506445139" />
+      <inertia
+        ixx="8.07177480392565E-05"
+        ixy="-2.7866819081814E-14"
+        ixz="6.41246309196677E-06"
+        iyy="0.00227357008704018"
+        iyz="-4.81512395428191E-14"
+        izz="0.0023537163887178" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spraygan3/meshes/Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.32156862745098 0.32156862745098 0.32156862745098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spraygan3/meshes/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="2"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="0.0334918933361202 0.0585084144876426 0.00117944783145434"
+        rpy="0 0 0" />
+      <mass
+        value="0.0576353406423693" />
+      <inertia
+        ixx="4.8377751676534E-05"
+        ixy="1.93442037657065E-13"
+        ixz="-2.89837649127285E-05"
+        iyy="0.00153869604999938"
+        iyz="-6.30795339774544E-14"
+        izz="0.00149034755106505" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spraygan3/meshes/Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.32156862745098 0.32156862745098 0.32156862745098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spraygan3/meshes/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="3"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link4">
+    <inertial>
+      <origin
+        xyz="-0.210956805541446 -2.20796550166438E-05 -0.000809798086932399"
+        rpy="0 0 0" />
+      <mass
+        value="0.469492145790988" />
+      <inertia
+        ixx="0.000152582806719886"
+        ixy="3.75853305227968E-07"
+        ixz="-1.61054654549285E-06"
+        iyy="0.00420699063180624"
+        iyz="2.13163349693599E-06"
+        izz="0.00421088859682501" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spraygan3/meshes/Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.392156862745098 0.392156862745098 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spraygan3/meshes/Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

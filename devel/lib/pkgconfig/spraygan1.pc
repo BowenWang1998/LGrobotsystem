@@ -1,0 +1,8 @@
+prefix=/home/pc/catkin_ws/devel
+
+Name: spraygan1
+Description: Description of spraygan1
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

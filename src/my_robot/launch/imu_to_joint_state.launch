@@ -1,0 +1,26 @@
+<launch>
+	<node name="imu_to_joint_state" pkg="my_robot" type="imu_to_joint_state" output="screen"/> 
+	  <arg name="model" default="$(find ky_imu)/urdf/spraygan3.urdf"/>
+	  <arg name="gui" default="false" />
+	  <arg name="rvizconfig" default="$(find urdf_tutorial)/rviz/urdf.rviz" />
+
+	  <param name="robot_description" textfile="$(find ky_imu)/urdf/spraygan3.urdf"/>
+	  <param name="use_gui" value="$(arg gui)"/>
+
+
+	   <node name="ky_imu" pkg="ky_imu" type="ky_imu" output="screen" respawn="true">
+	    <param name="imu_port" type="string" value="/dev/ttyUSB0"/> <!--/dev/imu 设备号-->
+	    <param name="imu_rate" type="int" value="100"/>  <!--imu数据频率-->
+	    <param name="imu_port_baud" type="int" value="115200"/> <!--波特率-->
+	    <param name="imu_frame_id" type="string" value="imu_base_link"/> <!--imu坐标系-->
+	    <rosparam param="imu_transform">[0, 0, 0, 0, 0, 0]</rosparam><!-- x y z r p y 静态tf变换-->
+	    </node>
+
+
+	  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+<!--   	  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />  -->
+
+<include file="$(find uvc_camera)/launch/myCamera.launch"/>
+	  <node name="qt_ros_project" pkg="qt_ros_project" type="qt_ros_project" />
+</launch>

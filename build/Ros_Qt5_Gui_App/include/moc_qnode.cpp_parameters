@@ -1,0 +1,14 @@
+-I/opt/ros/melodic/include
+-I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
+-I/usr/include
+-I/usr/include/opencv
+-I/home/pc/catkin_ws/src/Ros_Qt5_Gui_App/./include
+-I/home/pc/catkin_ws/src/Ros_Qt5_Gui_App
+-I/home/pc/catkin_ws/build/Ros_Qt5_Gui_App
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="ros_qt5_gui_app"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/pc/catkin_ws/build/Ros_Qt5_Gui_App/include/moc_qnode.cpp
+/home/pc/catkin_ws/src/Ros_Qt5_Gui_App/include/qnode.hpp

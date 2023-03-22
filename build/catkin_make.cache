@@ -1,0 +1,2 @@
+Ros_Qt5_Gui_App:class1_ros_qt_demo:ky_imu:my_robot:qt_ros_project:serial:spraygan3
+-DCATKIN_DEVEL_PREFIX=/home/pc/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pc/catkin_ws/install -G Unix Makefiles

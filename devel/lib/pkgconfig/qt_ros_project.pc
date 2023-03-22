@@ -1,0 +1,8 @@
+prefix=/home/pc/catkin_ws/devel
+
+Name: qt_ros_project
+Description: Description of qt_ros_project
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
