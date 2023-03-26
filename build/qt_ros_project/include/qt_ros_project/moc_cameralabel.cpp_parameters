@@ -13,5 +13,5 @@
 -DROS_PACKAGE_NAME="qt_ros_project"
 -DROSCONSOLE_BACKEND_LOG4CXX
 -o
-/home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_qnode.cpp
-/home/pc/catkin_ws/src/qt_ros_project/include/qt_ros_project/qnode.hpp
+/home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_cameralabel.cpp
+/home/pc/catkin_ws/src/qt_ros_project/include/qt_ros_project/cameralabel.hpp

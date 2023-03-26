@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_cameralabel.cpp
+../../../../src/qt_ros_project/include/qt_ros_project/cameralabel.hpp
+/home/pc/catkin_ws/src/qt_ros_project/include/qt_ros_project/cameralabel.hpp
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
 /home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_main_window.cpp
 ../../../../src/qt_ros_project/include/qt_ros_project/main_window.hpp
 /home/pc/catkin_ws/src/qt_ros_project/include/qt_ros_project/main_window.hpp
@@ -31,6 +39,12 @@ QtCore/qmetatype.h
 -
 
 /home/pc/catkin_ws/build/qt_ros_project/qrc_images.cpp
+
+/home/pc/catkin_ws/src/qt_ros_project/include/qt_ros_project/cameralabel.hpp
+QLabel
+-
+QMouseEvent
+-
 
 /home/pc/catkin_ws/src/qt_ros_project/include/qt_ros_project/main_window.hpp
 QtWidgets/QMainWindow
@@ -82,6 +96,14 @@ rviz/default_plugin/view_controllers/orbit_view_controller.h
 rviz/tool.h
 -
 QVBoxLayout
+-
+
+/home/pc/catkin_ws/src/qt_ros_project/src/cameralabel.cpp
+../include/qt_ros_project/cameralabel.hpp
+/home/pc/catkin_ws/src/qt_ros_project/include/qt_ros_project/cameralabel.hpp
+iostream
+-
+string
 -
 
 /home/pc/catkin_ws/src/qt_ros_project/src/main.cpp
@@ -4920,6 +4942,10 @@ qgenericmatrix.h
 qmatrix4x4.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QMouseEvent
+qevent.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLContext
 qopenglcontext.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h
@@ -6442,9 +6468,17 @@ qmenubar.h
 qmessagebox.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmessagebox.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QProgressBar
+qprogressbar.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qprogressbar.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
 qpushbutton.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSlider
+qslider.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem
 qlayoutitem.h
@@ -6704,6 +6738,12 @@ QtWidgets/qtwidgetsglobal.h
 QtWidgets/qdialog.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qprogressbar.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qframe.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -6869,7 +6909,11 @@ QtWidgets/QMenu
 -
 QtWidgets/QMenuBar
 -
+QtWidgets/QProgressBar
+-
 QtWidgets/QPushButton
+-
+QtWidgets/QSlider
 -
 QtWidgets/QSpacerItem
 -
@@ -6881,4 +6925,6 @@ QtWidgets/QVBoxLayout
 -
 QtWidgets/QWidget
 -
+../include/qt_ros_project/cameralabel.hpp
+include/qt_ros_project/cameralabel.hpp
 

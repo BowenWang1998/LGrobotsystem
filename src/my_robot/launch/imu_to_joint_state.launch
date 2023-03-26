@@ -18,6 +18,6 @@
 
 <!--   	  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />  -->
 
-<include file="$(find uvc_camera)/launch/myCamera.launch"/>
+	  <include file="$(find uvc_camera)/launch/myCamera.launch"/>
 	  <node name="qt_ros_project" pkg="qt_ros_project" type="qt_ros_project" />
 </launch>

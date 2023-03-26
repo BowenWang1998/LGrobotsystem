@@ -4,10 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_cameralabel.cpp" "/home/pc/catkin_ws/build/qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o"
   "/home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_main_window.cpp" "/home/pc/catkin_ws/build/qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_main_window.cpp.o"
   "/home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_qnode.cpp" "/home/pc/catkin_ws/build/qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qnode.cpp.o"
   "/home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_qrviz.cpp" "/home/pc/catkin_ws/build/qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qrviz.cpp.o"
   "/home/pc/catkin_ws/build/qt_ros_project/qrc_images.cpp" "/home/pc/catkin_ws/build/qt_ros_project/CMakeFiles/qt_ros_project.dir/qrc_images.cpp.o"
+  "/home/pc/catkin_ws/src/qt_ros_project/src/cameralabel.cpp" "/home/pc/catkin_ws/build/qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o"
   "/home/pc/catkin_ws/src/qt_ros_project/src/main.cpp" "/home/pc/catkin_ws/build/qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main.cpp.o"
   "/home/pc/catkin_ws/src/qt_ros_project/src/main_window.cpp" "/home/pc/catkin_ws/build/qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main_window.cpp.o"
   "/home/pc/catkin_ws/src/qt_ros_project/src/qnode.cpp" "/home/pc/catkin_ws/build/qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qnode.cpp.o"
@@ -36,6 +38,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/OGRE/Overlay"
   "/usr/include/OGRE"
   "/usr/include/opencv"
+  "/home/pc/catkin_ws/src/qt_ros_project/include"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"

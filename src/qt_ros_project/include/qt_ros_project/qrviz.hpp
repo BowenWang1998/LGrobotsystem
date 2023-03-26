@@ -17,12 +17,15 @@ class qrviz: public QWidget
   Q_OBJECT
 public:
   qrviz(QWidget *parent=nullptr);
+protected:
+  bool eventFilter(QObject *obj, QEvent *event);
+   signals:
+    void doubleClicked();
 private:
   rviz::RenderPanel* render_panel_;
   rviz::VisualizationManager* manager_;
   rviz::Display* imu_display_;
   rviz::ToolManager* tool_manager_;
-  void loadRvizConfig(const QString& configFilePath);
 };
 
 #endif // QRVIZ_HPP

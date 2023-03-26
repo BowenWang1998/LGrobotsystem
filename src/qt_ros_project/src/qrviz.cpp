@@ -7,9 +7,11 @@
 
 qrviz::qrviz(QWidget* parent) : QWidget(parent)
 {
+  setMouseTracking(true);
   render_panel_ = new rviz::RenderPanel();
   manager_=new rviz::VisualizationManager(render_panel_);
   render_panel_->initialize(manager_->getSceneManager(),manager_);
+  render_panel_->installEventFilter(this);
 
   manager_->initialize();
   manager_->startUpdate();
@@ -27,9 +29,6 @@ qrviz::qrviz(QWidget* parent) : QWidget(parent)
 //    imu_display_->subProp("Scale")->setValue(QVariant(5));
     // 设置模型缩放比例
   }
-
-
-
 
   rviz::Display* grid_display =manager_->createDisplay("rviz/Grid","Grid",true);
   grid_display->subProp("Cell Size")->setValue(1.0);
@@ -52,26 +51,15 @@ qrviz::qrviz(QWidget* parent) : QWidget(parent)
   main_layout->addWidget(render_panel_,1);
   setLayout(main_layout);
 }
-
-
-void qrviz::loadRvizConfig(const QString &configFilePath)
+bool qrviz::eventFilter(QObject *obj, QEvent *event)
 {
-  QFile config_file(configFilePath);
-
-  if (!config_file.open(QIODevice::ReadOnly | QIODevice::Text))
-  {
-//    qDebug() << "无法打开配置文件: " << config_file_path;
-    std::cout<< "failed to open the file!"<<std::endl;
-    return;
-  }
-
-  QTextStream in(&config_file);
-  QString config_data = in.readAll();
-  config_file.close();
-
-  rviz::YamlConfigReader reader;
-  rviz::Config config;
-reader.readString(config, config_data);
-manager_->load(config);
-
+    if (obj == render_panel_ && event->type() == QEvent::MouseButtonDblClick)
+    {
+        // 发出 doubleClicked 信号
+        emit doubleClicked();
+        return true;
+    }
+    return QObject::eventFilter(obj, event);
 }
+
+

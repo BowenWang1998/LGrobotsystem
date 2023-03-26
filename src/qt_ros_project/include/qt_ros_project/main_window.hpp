@@ -49,7 +49,8 @@ public Q_SLOTS:
 	void on_actionAbout_triggered();
 	void on_button_connect_clicked(bool check );
 	void on_checkbox_use_environment_stateChanged(int state);
-
+  void onLabelDoubleClicked();
+  void on_qrviz_doubleClicked();
     /******************************************
     ** Manual connections
     *******************************************/
@@ -63,6 +64,7 @@ private:
 	Ui::MainWindowDesign ui;
 	QNode qnode;
   qrviz* myrviz;
+  bool isFullScreen=false;
 };
 
 }  // namespace qt_ros_project

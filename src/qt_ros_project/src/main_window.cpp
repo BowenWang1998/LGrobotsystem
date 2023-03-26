@@ -46,7 +46,13 @@ MainWindow::MainWindow(int argc, char** argv, QWidget *parent)
     QObject::connect(&qnode,SIGNAL(image3_vel(QImage)),this,SLOT(slot_update_image3(QImage)));  //渲染label画面
     QObject::connect(&qnode,SIGNAL(image4_vel(QImage)),this,SLOT(slot_update_image4(QImage)));  //渲染label画面
 
-	/*********************
+    QObject::connect(ui.camera_label1,SIGNAL(doubleClicked()),this,SLOT(onLabelDoubleClicked()));  //label点击事件
+    QObject::connect(ui.camera_label2,SIGNAL(doubleClicked()),this,SLOT(onLabelDoubleClicked()));  //label点击事件
+    QObject::connect(ui.camera_label3,SIGNAL(doubleClicked()),this,SLOT(onLabelDoubleClicked()));  //label点击事件
+    QObject::connect(ui.camera_label4,SIGNAL(doubleClicked()),this,SLOT(onLabelDoubleClicked()));  //label点击事件
+
+//    QObject::connect(ui.camera_label1,&QLabel::mouseDoubleClickEvent,);
+  /*********************
 	** Logging
 	**********************/
 	ui.view_logging->setModel(qnode.loggingModel());
@@ -95,9 +101,13 @@ void MainWindow::on_button_connect_clicked(bool check) {
 			showNoMasterMessage();
 		} else {
 			ui.button_connect->setEnabled(false);
+
       myrviz=new qrviz();
-      ui.horizontalLayout_8->setStretch(0,3);
+//      ui.horizontalLayout_8->setStretch(0,3);       //设置左侧为3
+      myrviz->setSizePolicy(QSizePolicy::Expanding,myrviz->sizePolicy().horizontalPolicy());
+QObject::connect(myrviz, &qrviz::doubleClicked, this, &MainWindow::on_qrviz_doubleClicked);
       ui.rvizLayout->layout()->addWidget(myrviz);
+
 		}
 	} else {
 		if ( ! qnode.init(ui.line_edit_master->text().toStdString(),
@@ -108,8 +118,13 @@ void MainWindow::on_button_connect_clicked(bool check) {
 			ui.line_edit_master->setReadOnly(true);
 			ui.line_edit_host->setReadOnly(true);
 			ui.line_edit_topic->setReadOnly(true);
+
       myrviz=new qrviz();
+//      ui.horizontalLayout_8->setStretch(0,3);
+      myrviz->setSizePolicy(QSizePolicy::Expanding,myrviz->sizePolicy().horizontalPolicy());
+QObject::connect(myrviz, &qrviz::doubleClicked, this, &MainWindow::on_qrviz_doubleClicked);
       ui.rvizLayout->layout()->addWidget(myrviz);
+
 		}
 	}
 }
@@ -124,7 +139,46 @@ void MainWindow::on_checkbox_use_environment_stateChanged(int state) {
 	}
 	ui.line_edit_master->setEnabled(enabled);
 	ui.line_edit_host->setEnabled(enabled);
-	//ui.line_edit_topic->setEnabled(enabled);
+  //ui.line_edit_topic->setEnabled(enabled);
+}
+
+
+void MainWindow::on_qrviz_doubleClicked()
+{
+  qrviz* clickedQviz = qobject_cast<qrviz*>(sender());
+  std::cout<< clickedQviz->objectName().toStdString() << std::endl;
+  if(clickedQviz && !isFullScreen){
+    clickedQviz->setWindowState(Qt::WindowFullScreen);
+    ui.gridLayout_camera_2->hide();
+
+    isFullScreen = true;
+  }else if(clickedQviz && isFullScreen){
+    clickedQviz->setWindowState(Qt::WindowNoState);
+    ui.gridLayout_camera_2->show();
+
+    isFullScreen = false;
+  }
+}
+void MainWindow::onLabelDoubleClicked()
+{
+  CameraLabel* clickedLabel = qobject_cast<CameraLabel*>(sender());
+  std::cout<< clickedLabel->objectName().toStdString() << std::endl;
+  if(clickedLabel && !isFullScreen){
+//    clickedLabel->setWindowState(Qt::WindowFullScreen);
+    ui.camera_label1->setVisible(false);
+    ui.camera_label2->setVisible(false);
+    ui.camera_label3->setVisible(false);
+    ui.camera_label4->setVisible(false);
+    clickedLabel->setVisible(true);
+    isFullScreen = true;
+  }else if(clickedLabel && isFullScreen){
+    clickedLabel->setWindowState(Qt::WindowNoState);
+    ui.camera_label1->setVisible(true);
+    ui.camera_label2->setVisible(true);
+    ui.camera_label3->setVisible(true);
+    ui.camera_label4->setVisible(true);
+    isFullScreen = false;
+  }
 }
 
 /*****************************************************************************
@@ -191,5 +245,5 @@ void MainWindow::closeEvent(QCloseEvent *event)
 	QMainWindow::closeEvent(event);
 }
 
-}  // namespace qt_ros_project
+}
 

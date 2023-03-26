@@ -66,21 +66,49 @@ qt_ros_project/ui_main_window.h: /home/pc/catkin_ws/src/qt_ros_project/ui/main_w
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ui_main_window.h"
 	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/lib/qt5/bin/uic -o /home/pc/catkin_ws/build/qt_ros_project/ui_main_window.h /home/pc/catkin_ws/src/qt_ros_project/ui/main_window.ui
 
+qt_ros_project/include/qt_ros_project/moc_cameralabel.cpp: /home/pc/catkin_ws/src/qt_ros_project/include/qt_ros_project/cameralabel.hpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating include/qt_ros_project/moc_cameralabel.cpp"
+	cd /home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project && /usr/lib/qt5/bin/moc @/home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_cameralabel.cpp_parameters
+
 qt_ros_project/include/qt_ros_project/moc_main_window.cpp: /home/pc/catkin_ws/src/qt_ros_project/include/qt_ros_project/main_window.hpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating include/qt_ros_project/moc_main_window.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating include/qt_ros_project/moc_main_window.cpp"
 	cd /home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project && /usr/lib/qt5/bin/moc @/home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_main_window.cpp_parameters
 
 qt_ros_project/include/qt_ros_project/moc_qnode.cpp: /home/pc/catkin_ws/src/qt_ros_project/include/qt_ros_project/qnode.hpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating include/qt_ros_project/moc_qnode.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating include/qt_ros_project/moc_qnode.cpp"
 	cd /home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project && /usr/lib/qt5/bin/moc @/home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_qnode.cpp_parameters
 
 qt_ros_project/include/qt_ros_project/moc_qrviz.cpp: /home/pc/catkin_ws/src/qt_ros_project/include/qt_ros_project/qrviz.hpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating include/qt_ros_project/moc_qrviz.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating include/qt_ros_project/moc_qrviz.cpp"
 	cd /home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project && /usr/lib/qt5/bin/moc @/home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_qrviz.cpp_parameters
+
+qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o: qt_ros_project/CMakeFiles/qt_ros_project.dir/flags.make
+qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o: /home/pc/catkin_ws/src/qt_ros_project/src/cameralabel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o"
+	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o -c /home/pc/catkin_ws/src/qt_ros_project/src/cameralabel.cpp
+
+qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.i"
+	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/catkin_ws/src/qt_ros_project/src/cameralabel.cpp > CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.i
+
+qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.s"
+	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/catkin_ws/src/qt_ros_project/src/cameralabel.cpp -o CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.s
+
+qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o.requires:
+
+.PHONY : qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o.requires
+
+qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o.provides: qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o.requires
+	$(MAKE) -f qt_ros_project/CMakeFiles/qt_ros_project.dir/build.make qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o.provides.build
+.PHONY : qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o.provides
+
+qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o.provides.build: qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o
+
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main.cpp.o: qt_ros_project/CMakeFiles/qt_ros_project.dir/flags.make
 qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main.cpp.o: /home/pc/catkin_ws/src/qt_ros_project/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main.cpp.o"
 	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt_ros_project.dir/src/main.cpp.o -c /home/pc/catkin_ws/src/qt_ros_project/src/main.cpp
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main.cpp.i: cmake_force
@@ -104,7 +132,7 @@ qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main.cpp.o.provides.build: qt_r
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main_window.cpp.o: qt_ros_project/CMakeFiles/qt_ros_project.dir/flags.make
 qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main_window.cpp.o: /home/pc/catkin_ws/src/qt_ros_project/src/main_window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main_window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main_window.cpp.o"
 	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt_ros_project.dir/src/main_window.cpp.o -c /home/pc/catkin_ws/src/qt_ros_project/src/main_window.cpp
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main_window.cpp.i: cmake_force
@@ -128,7 +156,7 @@ qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main_window.cpp.o.provides.buil
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qnode.cpp.o: qt_ros_project/CMakeFiles/qt_ros_project.dir/flags.make
 qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qnode.cpp.o: /home/pc/catkin_ws/src/qt_ros_project/src/qnode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qnode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qnode.cpp.o"
 	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt_ros_project.dir/src/qnode.cpp.o -c /home/pc/catkin_ws/src/qt_ros_project/src/qnode.cpp
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qnode.cpp.i: cmake_force
@@ -152,7 +180,7 @@ qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qnode.cpp.o.provides.build: qt_
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qrviz.cpp.o: qt_ros_project/CMakeFiles/qt_ros_project.dir/flags.make
 qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qrviz.cpp.o: /home/pc/catkin_ws/src/qt_ros_project/src/qrviz.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qrviz.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qrviz.cpp.o"
 	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt_ros_project.dir/src/qrviz.cpp.o -c /home/pc/catkin_ws/src/qt_ros_project/src/qrviz.cpp
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qrviz.cpp.i: cmake_force
@@ -176,7 +204,7 @@ qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qrviz.cpp.o.provides.build: qt_
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/qrc_images.cpp.o: qt_ros_project/CMakeFiles/qt_ros_project.dir/flags.make
 qt_ros_project/CMakeFiles/qt_ros_project.dir/qrc_images.cpp.o: qt_ros_project/qrc_images.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/qrc_images.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/qrc_images.cpp.o"
 	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt_ros_project.dir/qrc_images.cpp.o -c /home/pc/catkin_ws/build/qt_ros_project/qrc_images.cpp
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/qrc_images.cpp.i: cmake_force
@@ -198,9 +226,33 @@ qt_ros_project/CMakeFiles/qt_ros_project.dir/qrc_images.cpp.o.provides: qt_ros_p
 qt_ros_project/CMakeFiles/qt_ros_project.dir/qrc_images.cpp.o.provides.build: qt_ros_project/CMakeFiles/qt_ros_project.dir/qrc_images.cpp.o
 
 
+qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o: qt_ros_project/CMakeFiles/qt_ros_project.dir/flags.make
+qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o: qt_ros_project/include/qt_ros_project/moc_cameralabel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o"
+	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o -c /home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_cameralabel.cpp
+
+qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.i"
+	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_cameralabel.cpp > CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.i
+
+qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.s"
+	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_cameralabel.cpp -o CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.s
+
+qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o.requires:
+
+.PHONY : qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o.requires
+
+qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o.provides: qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o.requires
+	$(MAKE) -f qt_ros_project/CMakeFiles/qt_ros_project.dir/build.make qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o.provides.build
+.PHONY : qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o.provides
+
+qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o.provides.build: qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o
+
+
 qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_main_window.cpp.o: qt_ros_project/CMakeFiles/qt_ros_project.dir/flags.make
 qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_main_window.cpp.o: qt_ros_project/include/qt_ros_project/moc_main_window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_main_window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_main_window.cpp.o"
 	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_main_window.cpp.o -c /home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_main_window.cpp
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_main_window.cpp.i: cmake_force
@@ -224,7 +276,7 @@ qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_main_win
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qnode.cpp.o: qt_ros_project/CMakeFiles/qt_ros_project.dir/flags.make
 qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qnode.cpp.o: qt_ros_project/include/qt_ros_project/moc_qnode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qnode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qnode.cpp.o"
 	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qnode.cpp.o -c /home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_qnode.cpp
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qnode.cpp.i: cmake_force
@@ -248,7 +300,7 @@ qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qnode.cp
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qrviz.cpp.o: qt_ros_project/CMakeFiles/qt_ros_project.dir/flags.make
 qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qrviz.cpp.o: qt_ros_project/include/qt_ros_project/moc_qrviz.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qrviz.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qrviz.cpp.o"
 	cd /home/pc/catkin_ws/build/qt_ros_project && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qrviz.cpp.o -c /home/pc/catkin_ws/build/qt_ros_project/include/qt_ros_project/moc_qrviz.cpp
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qrviz.cpp.i: cmake_force
@@ -272,11 +324,13 @@ qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qrviz.cp
 
 # Object files for target qt_ros_project
 qt_ros_project_OBJECTS = \
+"CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o" \
 "CMakeFiles/qt_ros_project.dir/src/main.cpp.o" \
 "CMakeFiles/qt_ros_project.dir/src/main_window.cpp.o" \
 "CMakeFiles/qt_ros_project.dir/src/qnode.cpp.o" \
 "CMakeFiles/qt_ros_project.dir/src/qrviz.cpp.o" \
 "CMakeFiles/qt_ros_project.dir/qrc_images.cpp.o" \
+"CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o" \
 "CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_main_window.cpp.o" \
 "CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qnode.cpp.o" \
 "CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qrviz.cpp.o"
@@ -284,11 +338,13 @@ qt_ros_project_OBJECTS = \
 # External object files for target qt_ros_project
 qt_ros_project_EXTERNAL_OBJECTS =
 
+/home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project: qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o
 /home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project: qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main.cpp.o
 /home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project: qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main_window.cpp.o
 /home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project: qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qnode.cpp.o
 /home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project: qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qrviz.cpp.o
 /home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project: qt_ros_project/CMakeFiles/qt_ros_project.dir/qrc_images.cpp.o
+/home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project: qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o
 /home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project: qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_main_window.cpp.o
 /home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project: qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qnode.cpp.o
 /home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project: qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qrviz.cpp.o
@@ -348,7 +404,7 @@ qt_ros_project_EXTERNAL_OBJECTS =
 /home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
 /home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
 /home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project: qt_ros_project/CMakeFiles/qt_ros_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable /home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable /home/pc/catkin_ws/devel/lib/qt_ros_project/qt_ros_project"
 	cd /home/pc/catkin_ws/build/qt_ros_project && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qt_ros_project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -356,11 +412,13 @@ qt_ros_project/CMakeFiles/qt_ros_project.dir/build: /home/pc/catkin_ws/devel/lib
 
 .PHONY : qt_ros_project/CMakeFiles/qt_ros_project.dir/build
 
+qt_ros_project/CMakeFiles/qt_ros_project.dir/requires: qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o.requires
 qt_ros_project/CMakeFiles/qt_ros_project.dir/requires: qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main.cpp.o.requires
 qt_ros_project/CMakeFiles/qt_ros_project.dir/requires: qt_ros_project/CMakeFiles/qt_ros_project.dir/src/main_window.cpp.o.requires
 qt_ros_project/CMakeFiles/qt_ros_project.dir/requires: qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qnode.cpp.o.requires
 qt_ros_project/CMakeFiles/qt_ros_project.dir/requires: qt_ros_project/CMakeFiles/qt_ros_project.dir/src/qrviz.cpp.o.requires
 qt_ros_project/CMakeFiles/qt_ros_project.dir/requires: qt_ros_project/CMakeFiles/qt_ros_project.dir/qrc_images.cpp.o.requires
+qt_ros_project/CMakeFiles/qt_ros_project.dir/requires: qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o.requires
 qt_ros_project/CMakeFiles/qt_ros_project.dir/requires: qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_main_window.cpp.o.requires
 qt_ros_project/CMakeFiles/qt_ros_project.dir/requires: qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qnode.cpp.o.requires
 qt_ros_project/CMakeFiles/qt_ros_project.dir/requires: qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_qrviz.cpp.o.requires
@@ -373,6 +431,7 @@ qt_ros_project/CMakeFiles/qt_ros_project.dir/clean:
 
 qt_ros_project/CMakeFiles/qt_ros_project.dir/depend: qt_ros_project/qrc_images.cpp
 qt_ros_project/CMakeFiles/qt_ros_project.dir/depend: qt_ros_project/ui_main_window.h
+qt_ros_project/CMakeFiles/qt_ros_project.dir/depend: qt_ros_project/include/qt_ros_project/moc_cameralabel.cpp
 qt_ros_project/CMakeFiles/qt_ros_project.dir/depend: qt_ros_project/include/qt_ros_project/moc_main_window.cpp
 qt_ros_project/CMakeFiles/qt_ros_project.dir/depend: qt_ros_project/include/qt_ros_project/moc_qnode.cpp
 qt_ros_project/CMakeFiles/qt_ros_project.dir/depend: qt_ros_project/include/qt_ros_project/moc_qrviz.cpp

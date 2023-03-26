@@ -19,7 +19,9 @@ find_package(catkin REQUIRED COMPONENTS qt_build roscpp rviz
     image_transport
 
     )
-include_directories(${catkin_INCLUDE_DIRS})
+include_directories(${catkin_INCLUDE_DIRS}
+      include # 添加包含自定义头文件的目录
+    )
 #add
 find_package(Qt5 REQUIRED Core Widgets)
 set(QT_LIBRARIES Qt5::Widgets)

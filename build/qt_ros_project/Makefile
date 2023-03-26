@@ -182,6 +182,33 @@ qt_ros_project/fast:
 	cd /home/pc/catkin_ws/build && $(MAKE) -f qt_ros_project/CMakeFiles/qt_ros_project.dir/build.make qt_ros_project/CMakeFiles/qt_ros_project.dir/build
 .PHONY : qt_ros_project/fast
 
+include/qt_ros_project/moc_cameralabel.o: include/qt_ros_project/moc_cameralabel.cpp.o
+
+.PHONY : include/qt_ros_project/moc_cameralabel.o
+
+# target to build an object file
+include/qt_ros_project/moc_cameralabel.cpp.o:
+	cd /home/pc/catkin_ws/build && $(MAKE) -f qt_ros_project/CMakeFiles/qt_ros_project.dir/build.make qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.o
+.PHONY : include/qt_ros_project/moc_cameralabel.cpp.o
+
+include/qt_ros_project/moc_cameralabel.i: include/qt_ros_project/moc_cameralabel.cpp.i
+
+.PHONY : include/qt_ros_project/moc_cameralabel.i
+
+# target to preprocess a source file
+include/qt_ros_project/moc_cameralabel.cpp.i:
+	cd /home/pc/catkin_ws/build && $(MAKE) -f qt_ros_project/CMakeFiles/qt_ros_project.dir/build.make qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.i
+.PHONY : include/qt_ros_project/moc_cameralabel.cpp.i
+
+include/qt_ros_project/moc_cameralabel.s: include/qt_ros_project/moc_cameralabel.cpp.s
+
+.PHONY : include/qt_ros_project/moc_cameralabel.s
+
+# target to generate assembly for a file
+include/qt_ros_project/moc_cameralabel.cpp.s:
+	cd /home/pc/catkin_ws/build && $(MAKE) -f qt_ros_project/CMakeFiles/qt_ros_project.dir/build.make qt_ros_project/CMakeFiles/qt_ros_project.dir/include/qt_ros_project/moc_cameralabel.cpp.s
+.PHONY : include/qt_ros_project/moc_cameralabel.cpp.s
+
 include/qt_ros_project/moc_main_window.o: include/qt_ros_project/moc_main_window.cpp.o
 
 .PHONY : include/qt_ros_project/moc_main_window.o
@@ -289,6 +316,33 @@ qrc_images.s: qrc_images.cpp.s
 qrc_images.cpp.s:
 	cd /home/pc/catkin_ws/build && $(MAKE) -f qt_ros_project/CMakeFiles/qt_ros_project.dir/build.make qt_ros_project/CMakeFiles/qt_ros_project.dir/qrc_images.cpp.s
 .PHONY : qrc_images.cpp.s
+
+src/cameralabel.o: src/cameralabel.cpp.o
+
+.PHONY : src/cameralabel.o
+
+# target to build an object file
+src/cameralabel.cpp.o:
+	cd /home/pc/catkin_ws/build && $(MAKE) -f qt_ros_project/CMakeFiles/qt_ros_project.dir/build.make qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.o
+.PHONY : src/cameralabel.cpp.o
+
+src/cameralabel.i: src/cameralabel.cpp.i
+
+.PHONY : src/cameralabel.i
+
+# target to preprocess a source file
+src/cameralabel.cpp.i:
+	cd /home/pc/catkin_ws/build && $(MAKE) -f qt_ros_project/CMakeFiles/qt_ros_project.dir/build.make qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.i
+.PHONY : src/cameralabel.cpp.i
+
+src/cameralabel.s: src/cameralabel.cpp.s
+
+.PHONY : src/cameralabel.s
+
+# target to generate assembly for a file
+src/cameralabel.cpp.s:
+	cd /home/pc/catkin_ws/build && $(MAKE) -f qt_ros_project/CMakeFiles/qt_ros_project.dir/build.make qt_ros_project/CMakeFiles/qt_ros_project.dir/src/cameralabel.cpp.s
+.PHONY : src/cameralabel.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -412,6 +466,9 @@ help:
 	@echo "... qt_ros_project"
 	@echo "... rebuild_cache"
 	@echo "... install"
+	@echo "... include/qt_ros_project/moc_cameralabel.o"
+	@echo "... include/qt_ros_project/moc_cameralabel.i"
+	@echo "... include/qt_ros_project/moc_cameralabel.s"
 	@echo "... include/qt_ros_project/moc_main_window.o"
 	@echo "... include/qt_ros_project/moc_main_window.i"
 	@echo "... include/qt_ros_project/moc_main_window.s"
@@ -424,6 +481,9 @@ help:
 	@echo "... qrc_images.o"
 	@echo "... qrc_images.i"
 	@echo "... qrc_images.s"
+	@echo "... src/cameralabel.o"
+	@echo "... src/cameralabel.i"
+	@echo "... src/cameralabel.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
